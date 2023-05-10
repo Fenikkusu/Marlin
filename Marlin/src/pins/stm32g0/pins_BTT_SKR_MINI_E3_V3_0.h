@@ -55,7 +55,7 @@
 // Limit Switches
 //
 #define X_STOP_PIN                          PC0   // X-STOP
-#define Y_STOP_PIN                          PC1   // Y-STOP
+#define Y_STOP_PIN                          PA8   // CR-30 Y-Stop 3 Pin Optical Sensor //PC1   // Y-STOP
 #define Z_STOP_PIN                          PC2   // Z-STOP
 
 //
@@ -436,6 +436,6 @@
 //
 // Default NEOPIXEL_PIN
 //
-#ifndef NEOPIXEL_PIN
-  #define NEOPIXEL_PIN                      PA8   // LED driving pin
-#endif
+//#ifndef NEOPIXEL_PIN // Disabling Since CR-30 Needs Neopixel Slot for Y-Stop Optical Sensor
+//  #define NEOPIXEL_PIN                      PA8   // LED driving pin
+//#endif
